@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: lightblue;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Student Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Options</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alert -->
+    <div class="alert alert-info text-center m-3" role="alert">
+        🎓 Welcome to the Student Registration Portal! Fill out the form below to get started.
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto mb-4" style="max-width: 800px;" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/800x300/?students" class="d-block w-100" alt="Students">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.uniacco.com/blog/wp-content/uploads/2019/12/28160228/3-1.jpg" class="d-block w-100" alt="Education" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.build-review.com/wp-content/uploads/2023/06/AdobeStock_398733319.jpg" class="d-block w-100" alt="University" width="300" height="300">
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Heading -->
+    <div class="text-center">
+        <h2 class="text-dark"><u>Student Registration Form</u></h2>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="container bg-white rounded p-4 shadow mb-5" style="max-width: 800px;">
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Roll No</label>
+                <input type="text" class="form-control" name="rollno" maxlength="10" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your university roll number">
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-control" maxlength="10">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" maxlength="10">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Father's Name</label>
+                <input type="text" class="form-control" maxlength="10">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Date of Birth (DD-MM-YYYY)</label>
+                <div class="d-flex gap-2">
+                    <input type="number" class="form-control" placeholder="DD" maxlength="2">
+                    <input type="number" class="form-control" placeholder="MM" maxlength="2">
+                    <input type="number" class="form-control" placeholder="YYYY" maxlength="4">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Mobile No</label>
+                <div class="d-flex gap-2">
+                    <input type="number" class="form-control" placeholder="Code" maxlength="3">
+                    <input type="number" class="form-control" placeholder="Number">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email ID</label>
+                <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label d-block">Gender</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" value="Male">
+                    <label class="form-check-label">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" value="Female">
+                    <label class="form-check-label">Female</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label d-block">Department</label>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> CSE</div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> IT</div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> ECE</div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> Civil</div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> Math</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Courses</label>
+                <select class="form-select">
+                    <option>Select current course</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Business Management">Business Management</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Student Photo</label>
+                <input type="file" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Address</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+
+            <!-- Accordion for extra info -->
+            <div class="accordion my-4" id="infoAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Why Register?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            By registering, you gain access to course materials, updates, and student services.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="text-center">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#confirmModal">Register</button>
+                <button type="reset" class="btn btn-danger me-2">Reset</button>
+            </div>
+        </form>
+
+        <!-- Pagination -->
+        <div class="mt-5 text-center">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to register with the provided details?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Yes, Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Activate tooltips
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+</body>
+</html>
