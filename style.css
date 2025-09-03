@@ -800,3 +800,336 @@ css/* Scrolling Pills Transition Styles */
         padding: 10px 20px;
     }
 }
+
+/* ========================================== */
+/* MOBILE RESPONSIVE MEDIA QUERIES - ADD TO YOUR EXISTING CSS */
+/* ========================================== */
+
+/* Extra Small devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+    /* Navbar responsive */
+    .navbar .logo {
+        height: 80px;
+        position: relative;
+        left: 0;
+        transform: none;
+    }
+    
+    /* Hero section */
+    .image-container {
+        height: 400px;
+    }
+    
+    .bottom-left {
+        max-width: 95%;
+        padding: 0 10px;
+        bottom: 10px;
+    }
+    
+    .bottom-left h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .bottom-left p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    /* Titles and text */
+    .title, .topic {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    
+    .subtitle, .subtopic {
+        font-size: 24px;
+    }
+    
+    .description, .descrip {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    
+    /* Images */
+    .image-style, .image-style2 {
+        height: 250px;
+    }
+    
+    /* Shop button */
+    .shop-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    /* Product grid */
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .new-badge {
+        right: 15px;
+        top: 10px;
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+    
+    /* Services grid */
+    .Services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    /* Model container */
+    .model-container {
+        margin: 0 5%;
+        padding: 15px;
+    }
+    
+    .model-container h3 {
+        font-size: 1.8em;
+    }
+    
+    .model-info {
+        font-size: 16px;
+    }
+    
+    .content-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .model-image img,
+    .model-videos {
+        height: 250px;
+    }
+    
+    /* Positioned elements */
+    .bbottom-left {
+        position: relative;
+        top: auto;
+        left: 15px;
+        margin: 20px 0;
+    }
+    
+    .bbbottom-left {
+        position: relative;
+        top: auto;
+        left: 15px;
+        margin: 20px 0;
+    }
+    
+    .bbbbbottom-left,
+    .bbbbbbottom-left {
+        left: 15px;
+    }
+    
+    .inbox-button {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+    
+    /* Header controller */
+    .header-controller {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .nav-button {
+        align-self: center;
+    }
+    
+    /* Pills responsive */
+    .pills-scroll-container {
+        height: 80px;
+    }
+    
+    .pills-scroll-track.reverse {
+        top: 40px;
+    }
+    
+    .pill {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Navbar */
+    .navbar .logo {
+        height: 100px;
+    }
+    
+    /* Hero section */
+    .image-container {
+        height: 500px;
+    }
+    
+    .bottom-left h1 {
+        font-size: 28px;
+    }
+    
+    .bottom-left p {
+        font-size: 16px;
+    }
+    
+    /* Titles */
+    .title, .topic {
+        font-size: 36px;
+    }
+    
+    .subtitle, .subtopic {
+        font-size: 32px;
+    }
+    
+    /* Product grid */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    /* Services grid */
+    .Services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    /* Model container */
+    .model-container {
+        margin: 0 8%;
+    }
+    
+    .content-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .model-image img,
+    .model-videos {
+        height: 300px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Navbar */
+    .navbar .logo {
+        height: 120px;
+    }
+    
+    /* Hero section */
+    .image-container {
+        height: 600px;
+    }
+    
+    .bottom-left h1 {
+        font-size: 32px;
+    }
+    
+    /* Product grid */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    /* Services grid */
+    .Services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    /* Model container */
+    .content-layout {
+        gap: 30px;
+    }
+    
+    .model-image img,
+    .model-videos {
+        height: 350px;
+    }
+    
+    /* Positioned elements adjustments */
+    .bbottom-left {
+        left: 30px;
+    }
+    
+    .bbbottom-left {
+        left: 30px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Product grid */
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Services grid */
+    .Services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .model-image img,
+    .model-videos {
+        height: 400px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .Services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Additional utility classes for mobile */
+@media (max-width: 767.98px) {
+    .mobile-center {
+        text-align: center !important;
+    }
+    
+    .mobile-full-width {
+        width: 100% !important;
+    }
+    
+    .mobile-padding {
+        padding: 0 15px !important;
+    }
+    
+    .mobile-margin {
+        margin: 15px 0 !important;
+    }
+    
+    .mobile-hidden {
+        display: none !important;
+    }
+    
+    /* Ensure buttons are touch-friendly */
+    button, .btn, .shop-button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Improve text readability on mobile */
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    /* Better spacing for mobile */
+    .container, .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
