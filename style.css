@@ -801,32 +801,57 @@ css/* Scrolling Pills Transition Styles */
     }
 }
 
-/* ------------------ Mobile Responsive ------------------ */
+/* ------------------ Mobile Responsive for iPhone 15 Pro Max & Smaller ------------------ */
 
-/* General layout fixes for smaller devices */
-@media (max-width: 992px) {
+/* Devices up to 430px (iPhone 15 Pro Max width) */
+@media (max-width: 430px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+    text-align: center;
+  }
+
   .navbar .logo {
     position: static;
     transform: none;
-    height: 80px;
-    margin: auto;
+    height: 70px;
+    margin: 10px auto;
   }
 
-  .bbottom-left,
-  .bbbottom-left {
-    position: static;
-    transform: none;
-    margin: 20px;
+  /* Banner section */
+  .bottom-left {
+    left: 50%;
+    top: auto;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 90%;
     text-align: center;
   }
 
-  .inbox-button {
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    margin: 20px auto;
+  .bottom-left h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
+  .bottom-left p {
+    font-size: 14px;
+  }
+
+  /* Product grid & Services grid */
+  .product-grid,
+  .Services-grid {
+    grid-template-columns: 1fr; /* Single column for iPhone */
+    gap: 15px;
+    margin: 0 10px;
+  }
+
+  /* Models section */
   .content-layout {
     flex-direction: column;
     align-items: center;
@@ -840,76 +865,39 @@ css/* Scrolling Pills Transition Styles */
 
   .model-image img,
   .model-videos {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
-}
 
-/* Tablet screens */
-@media (max-width: 768px) {
-  .product-grid,
-  .Services-grid,
+  /* Footer */
   .footer-content {
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr; /* Stack sections vertically */
+    text-align: center;
+    gap: 20px;
   }
 
-  .bottom-left h1 {
-    font-size: 28px;
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
   }
 
+  .email-input,
+  .send-btn {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  /* Text adjustments */
   .title,
   .subtitle,
   .topic,
   .subtopic {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .description,
   .descrip {
     font-size: 14px;
-  }
-}
-
-/* Small mobile screens */
-@media (max-width: 576px) {
-  .product-grid,
-  .Services-grid,
-  .footer-content {
-    grid-template-columns: 1fr;
-  }
-
-  .navbar-brand {
-    font-size: 20px;
-  }
-
-  .bottom-left h1 {
-    font-size: 22px;
-  }
-
-  .bottom-left p {
-    font-size: 14px;
-  }
-
-  .title,
-  .subtitle,
-  .topic,
-  .subtopic {
-    font-size: 24px;
-  }
-
-  .footer-section {
-    text-align: center;
-  }
-
-  .newsletter {
-    flex-direction: column;
-  }
-
-  .email-input,
-  .send-btn {
-    border-radius: 25px;
-    margin: 5px 0;
-    width: 100%;
+    line-height: 1.4;
   }
 }
