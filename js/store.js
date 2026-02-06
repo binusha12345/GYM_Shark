@@ -53,6 +53,24 @@ const Store = {
         }
     },
 
+    async loadProducts() {
+        try {
+            const response = await fetch('products.json');
+            const data = await response.json();
+
+            // Merge with custom products from Admin dashboard
+            const customProducts = JSON.parse(localStorage.getItem('gymshark_custom_products')) || [];
+            this.products = [...data, ...customProducts];
+
+            this.renderProducts();
+        } catch (error) {
+            console.error('Error loading products:', error);
+            const customProducts = JSON.parse(localStorage.getItem('gymshark_custom_products')) || [];
+            this.products = customProducts;
+            this.renderProducts();
+        }
+    },
+
     showToast(message) {
         // Simple toast implementation
         let toast = document.getElementById('gym-toast');

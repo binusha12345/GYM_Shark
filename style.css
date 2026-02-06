@@ -4,6 +4,28 @@ nav.navbar {
     position: sticky;
     top: 0;
     z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar-brand-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2001;
+}
+
+nav.navbar .logo {
+    height: 50px;
+    width: auto;
+}
+
+nav.navbar .container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav.navbar .nav-link,
@@ -103,6 +125,32 @@ nav.navbar .nav-link.active {
     width: 100%;
     height: auto;
     /* Keeps image proportional while filling space */
+}
+
+/* Services Buttons Reversion */
+.service-card .btn-primary {
+    background: linear-gradient(135deg, #00c6ff, #0072ff) !important;
+    /* Blue gradient */
+    border: none !important;
+    color: #fff !important;
+}
+
+.service-card .btn-primary:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff) !important;
+}
+
+.service-card .btn-success,
+.service-card .btn-add-bag-premium {
+    background: linear-gradient(135deg, #11998e, #38ef7d) !important;
+    /* Green gradient */
+    border: none !important;
+    color: #fff !important;
+}
+
+.service-card .btn-dark {
+    background: #222 !important;
+    border: 1px solid #eba10e !important;
+    color: #eba10e !important;
 }
 
 /* Bottom center text */
@@ -679,23 +727,22 @@ body {
 }
 
 .send-btn {
-    padding: 12px 25px;
+    background: #eba10e;
+    color: #000;
     border: none;
-    background: linear-gradient(135deg, #e67e22, #f39c12);
-    color: white;
-    border-radius: 0 25px 25px 0;
+    padding: 10px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
     font-weight: 600;
     transition: background 0.3s ease;
 }
 
 .send-btn:hover {
-    background: linear-gradient(135deg, #d35400, #e67e22);
+    background: #fff;
 }
 
 /* Latest Tweet Section */
-.footer-section.tweets {}
 
 .tweet {
     display: flex;
@@ -765,7 +812,7 @@ body {
 }
 
 .footer-nav a:hover {
-    color: #ffffff;
+    color: #eba10e;
 }
 
 .footer-brand {

@@ -26,23 +26,41 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg ">
-        <a href="index.html" class="navbar-brand-logo">
-            <img src="images.png" alt="Gymshark Logo" class="logo">
-        </a>
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><b>Gymshark</b></a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto">
+            <a href="index.html" class="navbar-brand-logo">
+                <img src="images.png" alt="Gymshark Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="online-coaching.html">Online Coaching</a></li>
+                            <li><a class="dropdown-item" href="nutrition-plans.html">Nutrition Plans</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="workout-plans.html">Workout Plans</a></li>
+                            <li><a class="dropdown-item" href="one-month-plan.html">1 Month Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                 </ul>
-                <div class="d-flex ms-3 align-items-center">
-                    <a href="cart.html" class="nav-link position-relative">
-                        👜 <span id="cart-count"
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
-                            style="font-size: 0.6rem; display: none;">0</span>
-                    </a>
+                <div class="d-flex align-items-center auth-links">
+                    <a href="login.html" class="nav-link text-white me-3">Login</a>
+                    <a href="register.html" class="btn btn-outline-warning btn-sm">Join Us</a>
                 </div>
             </div>
         </div>
@@ -65,6 +83,7 @@
         </div>
     </div>
 
+    <script src="js/auth.js"></script>
     <script src="js/store.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -117,6 +136,51 @@
             renderWishlist();
         });
     </script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>"Engineered for performance and style, Gymshark gym shorts offer lightweight comfort, durable stretch
+                    fabric, and a perfect fit for every workout." <a href="index.html" class="highlight-link">GYM SHARK
+                        HOME</a></p>
+                <div class="contact-info">
+                    <div class="contact-item"><span class="icon">📞</span><span>+94 78 415 2744</span></div>
+                    <div class="contact-item"><span class="icon">✉️</span><span>binushayohan5@gmail.com</span></div>
+                </div>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your e-mail" class="email-input">
+                    <button class="send-btn">Send</button>
+                </div>
+            </div>
+            <div class="footer-section tweets">
+                <h3>Latest Tweet</h3>
+                <div class="tweet"><span class="twitter-icon">🐦</span>
+                    <p>"Push harder, lift stronger, and move further. Gymshark gear is built for your grind."</p>
+                </div>
+                <div class="tweet"><span class="twitter-icon">🐦</span>
+                    <p>"Every rep counts. Gymshark shorts keep you cool and confident."</p>
+                </div>
+            </div>
+            <div class="footer-section instagram">
+                <h3>GYM SHARK Indoor Gym</h3>
+                <div class="instagram-grid">
+                    <div class="insta-item"><img src="gym1.jpg" alt="Insta"></div>
+                    <div class="insta-item"><img src="gym2.jpg" alt="Insta"></div>
+                    <div class="insta-item"><img src="gym3.jpg" alt="Insta"></div>
+                    <div class="insta-item"><img src="gym4.jpg" alt="Insta"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-brand"><span>GYMSHARK OFFICIAL</span></div>
+        </div>
+    </footer>
 </body>
 
 </html>
