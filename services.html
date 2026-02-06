@@ -41,7 +41,9 @@
 
 <body>
     <nav class="navbar navbar-expand-lg">
-        <img src="images.png" alt="Gymshark Logo" class="logo">
+        <a href="index.html" class="navbar-brand-logo">
+            <img src="images.png" alt="Gymshark Logo" class="logo">
+        </a>
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><b>Gymshark</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -90,6 +92,11 @@
         </div>
     </nav>
 
+    <div class="nav-controls">
+        <button class="nav-ctrl-btn" onclick="window.history.back()" title="Back">❮</button>
+        <button class="nav-ctrl-btn" onclick="window.history.forward()" title="Forward">❯</button>
+    </div>
+
     <header class="services-header">
         <div class="container">
             <h1>EVERYDAY SERVICES ESSENTIALS</h1>
@@ -107,6 +114,9 @@
                         <h3>Online Coaching</h3>
                         <p>Get personalized training plans and nutrition advice from our expert coaches.</p>
                         <a href="online-coaching.html" class="btn btn-dark">View Details</a>
+                        <button class="btn btn-primary ms-2" title="Add to Bag"
+                            onclick="Store.addToCart({id: 'svc-online-coaching', title: 'Online Coaching', price: 99.00, image: 'Service2.jpg'})">ADD
+                            TO BAG</button>
                     </div>
                 </div>
             </div>
@@ -118,6 +128,9 @@
                         <h3>Nutrition Plans</h3>
                         <p>Tailored meal plans to help you achieve your fitness goals.</p>
                         <a href="nutrition-plans.html" class="btn btn-dark">View Details</a>
+                        <button class="btn btn-primary ms-2" title="Add to Bag"
+                            onclick="Store.addToCart({id: 'svc-nutrition-plans', title: 'Nutrition Plans', price: 49.00, image: 'Service3.jpg'})">ADD
+                            TO BAG</button>
                     </div>
                 </div>
             </div>
@@ -129,6 +142,9 @@
                         <h3>Workout Plans</h3>
                         <p>Comprehensive workout plans designed for all fitness levels.</p>
                         <a href="workout-plans.html" class="btn btn-dark">View Details</a>
+                        <button class="btn btn-primary ms-2" title="Add to Bag"
+                            onclick="Store.addToCart({id: 'svc-workout-plans', title: 'Workout Plans', price: 59.00, image: 'Service4.webp'})">ADD
+                            TO BAG</button>
                     </div>
                 </div>
             </div>
@@ -140,6 +156,9 @@
                         <h3>1 Month Transformation</h3>
                         <p>We offer 1 month plan for men and women body build up.</p>
                         <a href="one-month-plan.html" class="btn btn-dark">View Details</a>
+                        <button class="btn btn-primary ms-2" title="Add to Bag"
+                            onclick="Store.addToCart({id: 'svc-one-month-plan', title: '1 Month Transformation', price: 149.00, image: 'Service5.jpg'})">ADD
+                            TO BAG</button>
                     </div>
                 </div>
             </div>

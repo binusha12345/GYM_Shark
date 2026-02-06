@@ -12,7 +12,9 @@
 
 <body>
   <nav class="navbar navbar-expand-lg ">
-    <img src="images.png" alt="Gymshark Logo" class="logo">
+    <a href="index.html" class="navbar-brand-logo">
+      <img src="images.png" alt="Gymshark Logo" class="logo">
+    </a>
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><b>Gymshark</b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -66,6 +68,17 @@
     </div>
   </nav>
 
+  <div class="category-navbar">
+    <a href="#women-wear" class="category-link">Women</a>
+    <a href="#men-wear" class="category-link">Men</a>
+    <a href="services.html" class="category-link">Services</a>
+  </div>
+
+  <div class="nav-controls">
+    <button class="nav-ctrl-btn" onclick="window.history.back()" title="Back">❮</button>
+    <button class="nav-ctrl-btn" onclick="window.history.forward()" title="Forward">❯</button>
+  </div>
+
   <div class="image-container">
     <img class="full-width-image"
       src="https://www.glossy.co/wp-content/uploads/sites/4/2025/05/OnyxComp_TRL3.jpeg?w=1140&h=600&crop=1"
@@ -90,7 +103,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="women-wear">
     <div class="header">
       <h1><u>Woman Wear</u></h1>
       <div class="header-controller">
@@ -128,7 +141,7 @@
           </div>
         </div>
         <p class="product-price">$45.00</p>
-        <button class="btn btn-dark w-100 mt-2"
+        <button class="btn btn-dark w-100 mt-2" title="Add to Bag"
           onclick="event.stopPropagation(); Store.addToCart({id: 'women-seamless-leggings-purple', title: 'Everyday Seamless Leggings', price: 45.00, image: 'girlswear10.webp'})">ADD
           TO BAG</button>
       </div>
@@ -155,7 +168,7 @@
           </div>
         </div>
         <p class="product-price">$45.00</p>
-        <button class="btn btn-dark w-100 mt-2"
+        <button class="btn btn-dark w-100 mt-2" title="Add to Bag"
           onclick="event.stopPropagation(); Store.addToCart({id: 'women-seamless-leggings-1', title: 'Everyday Seamless Leggings', price: 45.00, image: 'girlswear1.webp'})">ADD
           TO BAG</button>
       </div>
@@ -191,7 +204,7 @@
             <span class="star">☆</span>
           </div>
           <p class="product-price">$50.00</p>
-          <button class="btn btn-dark w-100 mt-2"
+          <button class="btn btn-dark w-100 mt-2" title="Add to Bag"
             onclick="event.stopPropagation(); Store.addToCart({id: 'women-seamless-bra-purple', title: 'Everyday Seamless Racerback Sports Bra', price: 50.00, image: 'girlswear2.webp'})">ADD
             TO BAG</button>
         </div>
@@ -217,7 +230,7 @@
             <span class="star">☆</span>
           </div>
           <p class="product-price">$40.00</p>
-          <button class="btn btn-dark w-100 mt-2"
+          <button class="btn btn-dark w-100 mt-2" title="Add to Bag"
             onclick="event.stopPropagation(); Store.addToCart({id: 'women-midi-tubetop', title: 'Everyday Seamless Midi TubeTop', price: 40.00, image: 'girlswear7.webp'})">ADD
             TO BAG</button>
         </div>
@@ -243,7 +256,7 @@
             <span class="star">☆</span>
           </div>
           <p class="product-price">$40.00</p>
-          <button class="btn btn-dark w-100 mt-2"
+          <button class="btn btn-dark w-100 mt-2" title="Add to Bag"
             onclick="event.stopPropagation(); Store.addToCart({id: 'women-shorts-purple', title: 'Everyday Seamless Shorts', price: 40.00, image: 'girlswear8.webp'})">ADD
             TO BAG</button>
         </div>
@@ -269,7 +282,7 @@
             <span class="star">☆</span>
           </div>
           <p class="product-price">$80.00</p>
-          <button class="btn btn-dark w-100 mt-2"
+          <button class="btn btn-dark w-100 mt-2" title="Add to Bag"
             onclick="event.stopPropagation(); Store.addToCart({id: 'women-midi-top', title: 'Everyday Seamless Ribbeled Midi Top', price: 80.00, image: 'girlswear3.webp'})">ADD
             TO BAG</button>
         </div>
@@ -295,7 +308,7 @@
             <span class="star">☆</span>
           </div>
           <p class="product-price">$65.00</p>
-          <button class="btn btn-dark w-100 mt-2"
+          <button class="btn btn-dark w-100 mt-2" title="Add to Bag"
             onclick="event.stopPropagation(); Store.addToCart({id: 'women-long-sleeve', title: 'Everyday Seamless Long Sleeve Crop Top', price: 65.00, image: 'girlswear4.webp'})">ADD
             TO BAG</button>
         </div>
@@ -321,7 +334,7 @@
             <span class="star">☆</span>
           </div>
           <p class="product-price">$55.00</p>
-          <button class="btn btn-dark w-100 mt-2"
+          <button class="btn btn-dark w-100 mt-2" title="Add to Bag"
             onclick="event.stopPropagation(); Store.addToCart({id: 'women-zip-tracktop', title: 'Everyday Seamless Zip TrackTop', price: 55.00, image: 'girlswear5.webp'})">ADD
             TO BAG</button>
         </div>
@@ -338,7 +351,7 @@
       <a href="products.html?category=men" target="_blank" class="shop-button">SHOP NOW</a>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="men-wear">
     <div class="header">
       <h1><u>Men Wear</u></h1>
       <div class="header-controller">
@@ -375,6 +388,9 @@
           </div>
         </div>
         <p class="product-price">$45.00</p>
+        <button class="btn btn-dark w-100 mt-2" title="Add to Bag" title="Add to Bag"
+          onclick="event.stopPropagation(); Store.addToCart({id: 'men-sport-shorts-blue', title: 'Sport 5\' Shorts', price: 45.00, image: 'short1.webp'})">ADD
+          TO BAG</button>
       </div>
     </div>
 
@@ -398,6 +414,9 @@
           </div>
         </div>
         <p class="product-price">$50.00</p>
+        <button class="btn btn-dark w-100 mt-2" title="Add to Bag" title="Add to Bag"
+          onclick="event.stopPropagation(); Store.addToCart({id: 'men-versity-shorts', title: 'Versity Mesh Shorts', price: 50.00, image: 'short2.webp'})">ADD
+          TO BAG</button>
       </div>
     </div>
 
@@ -421,6 +440,9 @@
           </div>
         </div>
         <p class="product-price">$45.00</p>
+        <button class="btn btn-dark w-100 mt-2" title="Add to Bag" title="Add to Bag"
+          onclick="event.stopPropagation(); Store.addToCart({id: 'men-arrival-6-shorts', title: 'Arrival Block 6\' Shorts', price: 45.00, image: 'short3.webp'})">ADD
+          TO BAG</button>
       </div>
     </div>
 
@@ -444,6 +466,9 @@
           </div>
         </div>
         <p class="product-price">$45.00</p>
+        <button class="btn btn-dark w-100 mt-2" title="Add to Bag" title="Add to Bag"
+          onclick="event.stopPropagation(); Store.addToCart({id: 'men-arrival-7-shorts', title: 'Arrival 7\' Shorts', price: 45.00, image: 'short4.webp'})">ADD
+          TO BAG</button>
       </div>
     </div>
   </div>

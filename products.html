@@ -31,7 +31,9 @@
 
 <body>
     <nav class="navbar navbar-expand-lg">
-        <img src="images.png" alt="Gymshark Logo" class="logo">
+        <a href="index.html" class="navbar-brand-logo">
+            <img src="images.png" alt="Gymshark Logo" class="logo">
+        </a>
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><b>Gymshark</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -80,6 +82,11 @@
             </div>
         </div>
     </nav>
+
+    <div class="nav-controls">
+        <button class="nav-ctrl-btn" onclick="window.history.back()" title="Back">❮</button>
+        <button class="nav-ctrl-btn" onclick="window.history.forward()" title="Forward">❯</button>
+    </div>
 
     <div class="filter-section">
         <div class="container">
