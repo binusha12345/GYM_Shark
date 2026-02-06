@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Gymshark Official</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-header {
+            padding: 60px 0;
+            background: #000;
+            color: white;
+            text-align: center;
+        }
+
+        .service-list-card {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+
+        .service-list-card:hover {
+            border-color: #000;
+        }
+
+        .service-list-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .service-list-content {
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img src="images.png" alt="Gymshark Logo" class="logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>Gymshark</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="services.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="online-coaching.html">Online Coaching</a></li>
+                            <li><a class="dropdown-item" href="nutrition-plans.html">Nutrition Plans</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="workout-plans.html">Workout Plans</a></li>
+                            <li><a class="dropdown-item" href="one-month-plan.html">1 Month Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+                <form class="d-flex" role="search" action="products.html" method="GET">
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+                <div class="d-flex ms-3 align-items-center">
+                    <a href="wishlist.html" class="nav-link position-relative me-3 text-white">
+                        ❤️ <span id="wishlist-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 0.6rem; display: none;">0</span>
+                    </a>
+                    <a href="cart.html" class="nav-link position-relative text-white">
+                        👜 <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark"
+                            style="font-size: 0.6rem; display: none;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="services-header">
+        <div class="container">
+            <h1>EVERYDAY SERVICES ESSENTIALS</h1>
+            <p>Engineered to support your fitness journey beyond the mirror.</p>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="col-md-6">
+                <div class="service-list-card">
+                    <img src="Service2.jpg" class="service-list-img" alt="Coaching">
+                    <div class="service-list-content">
+                        <h3>Online Coaching</h3>
+                        <p>Get personalized training plans and nutrition advice from our expert coaches.</p>
+                        <a href="online-coaching.html" class="btn btn-dark">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-md-6">
+                <div class="service-list-card">
+                    <img src="Service3.jpg" class="service-list-img" alt="Nutrition">
+                    <div class="service-list-content">
+                        <h3>Nutrition Plans</h3>
+                        <p>Tailored meal plans to help you achieve your fitness goals.</p>
+                        <a href="nutrition-plans.html" class="btn btn-dark">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-md-6">
+                <div class="service-list-card">
+                    <img src="Service4.webp" class="service-list-img" alt="Workouts">
+                    <div class="service-list-content">
+                        <h3>Workout Plans</h3>
+                        <p>Comprehensive workout plans designed for all fitness levels.</p>
+                        <a href="workout-plans.html" class="btn btn-dark">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="col-md-6">
+                <div class="service-list-card">
+                    <img src="Service5.jpg" class="service-list-img" alt="1 Month Plan">
+                    <div class="service-list-content">
+                        <h3>1 Month Transformation</h3>
+                        <p>We offer 1 month plan for men and women body build up.</p>
+                        <a href="one-month-plan.html" class="btn btn-dark">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 p-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>GYMSHARK</h5>
+                    <p>Be a visionary. The Gymshark community is devoted to the sport of bodybuilding and beyond.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Delivery</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-5 pt-3 border-top border-secondary">
+                <p>&copy; 2026 Gymshark Official. Be a visionary.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/store.js"></script>
+</body>
+
+</html>

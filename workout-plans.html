@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plans - Gymshark</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img src="images.png" alt="Gymshark Logo" class="logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>Gymshark</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="services.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="online-coaching.html">Online Coaching</a></li>
+                            <li><a class="dropdown-item" href="nutrition-plans.html">Nutrition Plans</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="workout-plans.html">Workout Plans</a></li>
+                            <li><a class="dropdown-item" href="one-month-plan.html">1 Month Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+                <form class="d-flex" role="search" action="products.html" method="GET">
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 text-center">
+        <h1>Workout Plans</h1>
+        <p class="lead">Elevate your training with science-based programs.</p>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card p-4 mb-4">
+                    <h3>Strength</h3>
+                    <p>Focus on heavy lifts and progressive overload.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 mb-4">
+                    <h3>Hypertrophy</h3>
+                    <p>Optimized for muscle growth and aesthetics.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 mb-4">
+                    <h3>Endurance</h3>
+                    <p>Improve your stamina and functional fitness.</p>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-section my-5">
+            <span class="fs-1 fw-bold text-dark">$29.99</span>
+            <span class="text-muted text-decoration-line-through ms-2">$49.99</span>
+            <span class="badge bg-danger ms-2">40% OFF</span>
+            <div class="mt-4">
+                <button class="btn btn-dark btn-lg px-5"
+                    onclick="Store.addToCart({id: 'service-workout', title: 'Workout Plans', price: 29.99, image: 'Service4.webp'})">ADD
+                    TO BAG</button>
+            </div>
+        </div>
+        <img src="Service4.webp" alt="Workout" class="img-fluid rounded shadow mt-4" style="max-height: 400px;">
+    </div>
+    <script src="js/store.js"></script>
+</body>
+
+</html>

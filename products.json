@@ -1,0 +1,176 @@
+[
+    {
+        "id": "women-seamless-leggings-purple",
+        "category": "women",
+        "title": "Everyday Seamless Leggings",
+        "type": "Regular",
+        "color": "Cherry Purple",
+        "price": 45.00,
+        "image": "girlswear10.webp",
+        "rating": 4,
+        "description": "Premium seamless leggings designed for maximum comfort and flexibility during your workouts. The high-waisted design ensures a secure fit while the breathable fabric keeps you cool.",
+        "specs": {
+            "Material": "90% Nylon, 10% Elastane",
+            "Fit": "High Waisted",
+            "Length": "Full Length",
+            "Feature": "Seamless"
+        }
+    },
+    {
+        "id": "women-seamless-leggings-1",
+        "category": "women",
+        "title": "Everyday Seamless Leggings",
+        "type": "Regular",
+        "color": "Cherry Purple",
+        "price": 45.00,
+        "image": "girlswear1.webp",
+        "rating": 4,
+        "description": "The original seamless leggings that started it all. High performance, high style.",
+        "specs": {
+            "Material": "90% Nylon, 10% Elastane",
+            "Fit": "High Waisted"
+        }
+    },
+    {
+        "id": "women-seamless-bra-purple",
+        "category": "women",
+        "title": "Everyday Seamless Racerback Sports Bra",
+        "type": "Light Support",
+        "color": "Cherry Purple",
+        "price": 50.00,
+        "image": "girlswear2.webp",
+        "rating": 4,
+        "description": "A lightweight racerback sports bra that provides the perfect amount of support for yoga, pilates, or everyday wear.",
+        "specs": {
+            "Material": "88% Polyester",
+            "Support": "Light"
+        }
+    },
+    {
+        "id": "women-midi-tubetop",
+        "category": "women",
+        "title": "Everyday Seamless Midi TubeTop",
+        "type": "Regular",
+        "color": "Cherry Purple",
+        "price": 40.00,
+        "image": "girlswear7.webp",
+        "rating": 4,
+        "description": "Stylish and functional tube top for your summer workouts.",
+        "specs": {
+            "Material": "92% Nylon",
+            "Type": "Tube Top"
+        }
+    },
+    {
+        "id": "women-shorts-purple",
+        "category": "women",
+        "title": "Everyday Seamless Shorts",
+        "type": "Regular",
+        "color": "Cherry Purple",
+        "price": 40.00,
+        "image": "girlswear8.webp",
+        "rating": 4,
+        "description": "Compression shorts designed for intensity.",
+        "specs": {
+            "Inseam": "3 inches"
+        }
+    },
+    {
+        "id": "women-midi-top",
+        "category": "women",
+        "title": "Everyday Seamless Ribbeled Midi Top",
+        "type": "Regular",
+        "color": "Cherry Purple",
+        "price": 80.00,
+        "image": "girlswear3.webp",
+        "rating": 5,
+        "description": "Premium ribbed midi top with a luxury feel.",
+        "specs": {
+            "Material": "Ribbed Knit"
+        }
+    },
+    {
+        "id": "women-long-sleeve",
+        "category": "women",
+        "title": "Everyday Seamless Long Sleeve Crop Top",
+        "type": "Regular",
+        "color": "Cherry Purple",
+        "price": 65.00,
+        "image": "girlswear4.webp",
+        "rating": 4,
+        "description": "Perfect for layering during warmups.",
+        "specs": {
+            "Type": "Long Sleeve"
+        }
+    },
+    {
+        "id": "women-zip-tracktop",
+        "category": "women",
+        "title": "Everyday Seamless Zip TrackTop",
+        "type": "Regular",
+        "color": "Cherry Purple",
+        "price": 55.00,
+        "image": "girlswear5.webp",
+        "rating": 4,
+        "description": "Full zip track top with a sleek fit.",
+        "specs": {
+            "Feature": "Full Zip"
+        }
+    },
+    {
+        "id": "men-sport-shorts-blue",
+        "category": "men",
+        "title": "Sport 5' Shorts",
+        "type": "Slim Fit",
+        "color": "Athletic Blue/Black",
+        "price": 45.00,
+        "image": "short1.webp",
+        "rating": 4,
+        "description": "Classic sport shorts designed for performance.",
+        "specs": {
+            "Inseam": "5 inches"
+        }
+    },
+    {
+        "id": "men-versity-shorts",
+        "category": "men",
+        "title": "Versity Mesh Shorts",
+        "type": "Regular Fit",
+        "color": "logo Blue/Black",
+        "price": 50.00,
+        "image": "short2.webp",
+        "rating": 4,
+        "description": "Mesh shorts for ultimate breathability.",
+        "specs": {
+            "Material": "100% Polyester Mesh"
+        }
+    },
+    {
+        "id": "men-arrival-6-shorts",
+        "category": "men",
+        "title": "Arrival Block 6' Shorts",
+        "type": "Slim Fit",
+        "color": "Deep Petrol Blue",
+        "price": 45.00,
+        "image": "short3.webp",
+        "rating": 4,
+        "description": "Lightweight shorts for everyday training.",
+        "specs": {
+            "Inseam": "6 inches"
+        }
+    },
+    {
+        "id": "men-arrival-7-shorts",
+        "category": "men",
+        "title": "Arrival 7' Shorts",
+        "type": "Slim Fit",
+        "color": "Arrival 7' Shorts",
+        "price": 45.00,
+        "image": "short4.webp",
+        "rating": 4,
+        "description": "The ultimate training shorts.",
+        "specs": {
+            "Inseam": "7 inches"
+        }
+    }
+]

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gymshark Official</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('gym5.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .story-section {
+            padding: 80px 0;
+        }
+
+        .value-card {
+            border: none;
+            transition: transform 0.3s;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img src="images.png" alt="Gymshark Logo" class="logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>Gymshark</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="online-coaching.html">Online Coaching</a></li>
+                            <li><a class="dropdown-item" href="nutrition-plans.html">Nutrition Plans</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="workout-plans.html">Workout Plans</a></li>
+                            <li><a class="dropdown-item" href="one-month-plan.html">1 Month Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                </ul>
+                <form class="d-flex" role="search" action="products.html" method="GET">
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+                <div class="d-flex ms-3 align-items-center">
+                    <a href="wishlist.html" class="nav-link position-relative me-3 text-white">
+                        ❤️ <span id="wishlist-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 0.6rem; display: none;">0</span>
+                    </a>
+                    <a href="cart.html" class="nav-link position-relative text-white">
+                        👜 <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark"
+                            style="font-size: 0.6rem; display: none;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-hero">
+        <div class="container">
+            <h1 class="display-3 fw-bold">OUR STORY</h1>
+            <p class="lead">BE A VISIONARY.</p>
+        </div>
+    </header>
+
+    <section class="story-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Driven by Performance</h2>
+                    <p>Gymshark is a British fitness apparel and accessories brand, manufacturer and online retailer
+                        headquartered in Solihull, UK.</p>
+                    <p>Founded in 2012 by Ben Francis and Lewis Morgan while they were still in university, Gymshark has
+                        grown from a screen-printing operation in a garage, into one of the fastest growing and most
+                        recognisable brands in fitness.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="gym3.jpg" alt="Gymshark HQ" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-5 p-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>GYMSHARK</h5>
+                    <p>Be a visionary. The Gymshark community is devoted to the sport of bodybuilding and beyond.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="wishlist.html" class="text-white text-decoration-none">Wishlist</a></li>
+                        <li><a href="cart.html" class="text-white text-decoration-none">Your Bag</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-5 pt-3 border-top border-secondary">
+                <p>&copy; 2026 Gymshark Official. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/store.js"></script>
+</body>
+
+</html>
