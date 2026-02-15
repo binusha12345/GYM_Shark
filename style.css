@@ -1,47 +1,259 @@
 nav.navbar {
-    background-color: #000 !important;
-    border-bottom: 2px solid #eba10e !important;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%) !important;
+    border-bottom: 3px solid #eba10e !important;
     position: sticky;
     top: 0;
     z-index: 2000;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: auto;
+    padding: 12px 0;
+    box-shadow: 0 8px 32px rgba(235, 161, 14, 0.15), 0 4px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 
+.navbar-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #eba10e;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .navbar-brand-logo {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2001;
+    left: 10px;
+    width: 222px;
+    height: auto;
+    transform: none;
+    
+    margin-right: 30px;
+    transition: transform 0.3s ease;
 }
 
+
+.navbar-brand-logo:hover {
+    transform: scale(1.05);
+}
+
+
 nav.navbar .logo {
-    height: 50px;
-    width: auto;
+    font-size: 30px;
 }
 
 nav.navbar .container-fluid {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px;
 }
 
 nav.navbar .nav-link,
 nav.navbar .navbar-brand,
 nav.navbar .dropdown-item {
     color: #fff !important;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+nav.navbar .nav-link {
+    position: relative;
+    padding: 8px 12px !important;
+}
+
+nav.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #eba10e;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* Remove underline from Services nav item */
+nav.navbar .nav-link.dropdown-toggle::after {
+    /* Revert: allow underline for dropdown-toggle */
+}
+
+
+nav.navbar .nav-link:hover::after,
+nav.navbar .nav-link.active::after {
+    width: 100%;
 }
 
 nav.navbar .nav-link:hover,
 nav.navbar .dropdown-item:hover,
 nav.navbar .nav-link.active {
     color: #eba10e !important;
+    text-shadow: 0 0 10px rgba(235, 161, 14, 0.3);
 }
 
+nav.navbar .dropdown-menu {
+    background-color: #1a1a1a !important;
+    border: 1px solid #eba10e !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(10px);
+}
 
+nav.navbar .dropdown-item {
+    padding: 10px 15px !important;
+    transition: all 0.3s ease;
+}
+
+nav.navbar .dropdown-item:hover {
+    background-color: rgba(235, 161, 14, 0.1) !important;
+    padding-left: 20px !important;
+}
+
+nav.navbar .navbar-toggler {
+    border: 2px solid #eba10e !important;
+    padding: 5px 10px;
+}
+
+nav.navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(235, 161, 14, 0.25) !important;
+}
+
+nav.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23eba10e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Auth Links Styling */
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-links .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 0 !important;
+    transition: all 0.3s ease;
+}
+
+.auth-links .nav-link:hover {
+    color: #eba10e !important;
+    text-shadow: 0 0 10px rgba(235, 161, 14, 0.4);
+}
+
+.auth-links .btn-outline-warning {
+    border: 2px solid #eba10e !important;
+    color: #eba10e !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 20px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 5px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-links .btn-outline-warning::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #eba10e;
+    z-index: -1;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-links .btn-outline-warning:hover {
+    color: #000 !important;
+    border-color: #eba10e !important;
+    box-shadow: 0 8px 25px rgba(235, 161, 14, 0.3) !important;
+}
+
+.auth-links .btn-outline-warning:hover::before {
+    left: 0;
+}
+
+/* Search Form Styling */
+#search-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#search-form .form-control {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 2px solid rgba(235, 161, 14, 0.5) !important;
+    color: #fff !important;
+    padding: 10px 15px !important;
+    border-radius: 5px !important;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+#search-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+#search-form .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: #eba10e !important;
+    box-shadow: 0 0 0 3px rgba(235, 161, 14, 0.2) !important;
+    color: #fff !important;
+}
+
+#search-form .btn-primary {
+    background: linear-gradient(135deg, #eba10e 0%, #d68a0a 100%) !important;
+    border: 2px solid #eba10e !important;
+    color: #000 !important;
+    font-weight: 600;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+}
+
+#search-form .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(235, 161, 14, 0.4) !important;
+    background: linear-gradient(135deg, #d68a0a 0%, #eba10e 100%) !important;
+}
+
+/* Cart and Wishlist Icons */
+nav.navbar .navbar-nav .nav-link.position-relative {
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 8px 12px !important;
+}
+
+nav.navbar .navbar-nav .nav-link.position-relative:hover {
+    transform: scale(1.2) rotate(-5deg);
+    filter: drop-shadow(0 5px 15px rgba(235, 161, 14, 0.4));
+}
+
+nav.navbar .position-absolute.badge {
+    background-color: #eba10e !important;
+    color: #000 !important;
+    font-weight: 600;
+    padding: 4px 8px !important;
+    border-radius: 50% !important;
+    min-width: 22px;
+    min-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .navbar .logo {
     position: absolute;
@@ -1013,8 +1225,9 @@ css
 
 .btn-primary:hover,
 .btn-success:hover {
-    background-color: #fff !important;
-    border-color: #fff !important;
+    background-color: #000 !important;
+    border-color: #eba10e !important;
+    color: #eba10e !important;
 }
 
 .btn-dark {
