@@ -38,66 +38,72 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a href="index.html" class="navbar-brand-logo">
-                <img src="images.png" alt="Gymshark Logo" class="logo">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-brand-creative">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="22" stroke="#eba10e" stroke-width="4" fill="#1a1a1a" />
+          <path d="M24 12L32 36H16L24 12Z" fill="#eba10e" />
+        </svg>
+        <span class="navbar-title">GYMSHARK FITNESS</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="online-coaching.html">Online Coaching</a></li>
-                            <li><a class="dropdown-item" href="nutrition-plans.html">Nutrition Plans</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="workout-plans.html">Workout Plans</a></li>
-                            <li><a class="dropdown-item" href="one-month-plan.html">1 Month Plan</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-                </ul>
-                <form class="d-flex mx-3" role="search" action="products.html" method="GET">
-                    <input class="form-control" type="search" name="q" placeholder="Search products..." aria-label="Search" />
-                    <button class="btn btn-primary" type="submit">Search</button>
-                </form>
-                <div class="d-flex align-items-center auth-links">
-                    <a href="login.html" class="nav-link text-white">Login</a>
-                    <a href="register.html" class="btn btn-outline-warning btn-sm">Join Us</a>
-                </div>
-                <div class="d-flex align-items-center ms-3">
-                    <a href="wishlist.html" class="nav-link position-relative me-3 text-white">
-                        ❤️ <span id="wishlist-count"
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                            style="font-size: 0.7rem; display: none;">0</span>
-                    </a>
-                    <a href="cart.html" class="nav-link position-relative text-white">
-                        👜 <span id="cart-count"
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                            style="font-size: 0.7rem; display: none;">0</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </nav>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="online-coaching.html">Online Coaching</a></li>
+              <li><a class="dropdown-item" href="nutrition-plans.html">Nutrition Plans</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="workout-plans.html">Workout Plans</a></li>
+              <li><a class="dropdown-item" href="one-month-plan.html">1 Month Plan</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        </ul>
 
-    <div class="nav-controls">
-        <button class="nav-ctrl-btn" onclick="window.history.back()" title="Back">❮</button>
-        <button class="nav-ctrl-btn" onclick="window.history.forward()" title="Forward">❯</button>
+        <form class="d-flex mx-3" role="search" id="search-form" action="products.html" method="GET">
+          <input class="form-control" type="search" name="q" placeholder="Search products..." aria-label="Search" />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+        <div class="d-flex align-items-center auth-links">
+          <a href="login.html" class="nav-link text-white">Login</a>
+          <a href="register.html" class="btn btn-outline-warning btn-sm">Join Us</a>
+        </div>
+
+        <div class="d-flex align-items-center ms-3">
+          <a href="wishlist.html" class="nav-link position-relative me-3 text-white">
+            ❤️ <span id="wishlist-count"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+              style="font-size: 0.7rem; display: none;">0</span>
+          </a>
+          <a href="cart.html" class="nav-link position-relative text-white">
+            👜 <span id="cart-count"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+              style="font-size: 0.7rem; display: none;">0</span>
+          </a>
+        </div>
+      </div>
     </div>
+  </nav>
+
+  <div class="nav-controls">
+    <button class="nav-ctrl-btn" onclick="window.history.back()" title="Back">❮</button>
+    <button class="nav-ctrl-btn" onclick="window.history.forward()" title="Forward">❯</button>
+  </div>
+
 
     <header class="about-hero">
         <div class="container">
